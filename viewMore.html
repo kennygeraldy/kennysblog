@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenny Geraldy's Blog</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./assets/images/boy_icon.png" type="image/x-icon">
+
+    <!-- Style  -->
+    <link rel="stylesheet" href="./assets/css/viewStyle.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body class="main-theme">
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="./index.html" class="nav-logo"><h1>Kenny's Blog</h1></a>
+                <button class="btn-nav-mobile">
+                    <ion-icon class="hamburger" name="reorder-three-outline"></ion-icon>
+                </button>
+
+                <div class="flex-wrapper">
+                    <ul class="desktop-nav">
+                        <li><a href="./aboutMe.html" class="nav-link">About Me</a></li>
+                        <li><a href="./index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button class="nav-menu-btn">
+                        <ion-icon class="hamburger" name="reorder-three-outline"></ion-icon>
+                    </button>
+                </div>
+                
+                <div class="mobile-nav">
+                    <button class="nav-close-btn">
+                        <ion-icon class="hamburger" name="reorder-three-outline"></ion-icon>
+                    </button>
+                    <div class="wrapper">
+                        <p class="h3 nav-title">Main Menu</p>
+                        <ul>
+                            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="./aboutMe.html" class="nav-link">About Me</a></li>
+                            <li class="nav-item"><a href="./index.html#contact" class="nav-link">Contact</a></li>
+                        </ul>            
+                    </div>
+                    <div class="wrapper">
+                        <p class="h3 nav-title">Topics</p>
+                        <ul>
+                            <li class="nav-item"><a href="./viewMore.html" class="nav-link">Recommended</a></li>
+                            <li class="nav-item"><a href="./viewMore.html" class="nav-link">Project</a></li>
+                            <li class="nav-item"><a href="./viewMore.html" class="nav-link">Community</a></li>
+                            <li class="nav-item"><a href="https://drive.google.com/file/d/1zyC-293FN05Ru2KabsCz93jjMZVb5v3V/view?usp=share_link" target="_blank" class="nav-link">My CV</a></li>
+                        </ul>  
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="container">
+                <!-- Blog -->
+                <div class="blog" id="blog">
+                    <div id="topics-header">
+                        <button class="topic-btn active" onclick="filterSection('all')">Show All</button>
+                        <button class="topic-btn" onclick="filterSection('recommend')">Recommended</button> 
+                        <button class="topic-btn" onclick="filterSection('project')">Project</button>
+                        <button class="topic-btn" onclick="filterSection('community')">Community</button>
+                    </div>
+
+                    <div class="blog-card-group blog-container" id="blog-card-group">
+
+                        <div class="blog-card project">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_1.webp" alt="The Recyclist" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Project</button>
+                                </div>
+                                <h3>
+                                    <a href="https://drive.google.com/file/d/1yYYGjcpABuiWeT1YSQ825OHV089iSHHn/view?usp=share_link" target="_blank" class="h3">Entrepreneurship Ideation</a>
+                                </h3>
+                                <p class="blog-text">
+                                    Creating Innovative business ideas to solve Indonesia's current crisis. The objective of The Recyclist is objective is to overcome the waste-producing problem in Indonesia.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time datetime="2021-7-5">5 July 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card project">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_2.webp" alt="Cooking Papa" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Project</button>
+                                </div>
+                                <h3>
+                                    <a href="#" class="h3">Business Application Development</a>
+                                </h3>
+                                <p class="blog-text">
+                                    Cooking Papa is an application that allows users to purchase beverages and foods from a certain location. This application was created using Java implementation.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-1-20">20 January 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card project">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_3.jpg" alt="UML" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Project</button>
+                                </div>
+                                <h3>
+                                    <a href="https://drive.google.com/file/d/19VSlPH4P2YwmuEMvo1mnGmIlCxA7tPcY/view?usp=share_link" target="_blank" class="h3">Advanced Information System Analysis and Design</a>
+                                </h3>
+                                <p class="blog-text">
+                                    Make Unified Modeling Language (UML) diagrams and an Object-Oriented Approach to make a system design. With the purpose of visually representing the system along with its main actors, roles, actions, artifacts or classes, in order to manage information about the system.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-6-19">19 June 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card project recommend">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_4.webp" alt="Neverending-Strike" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Project</button>
+                                    <button id="recommend" class="blog-topic text-tiny">Recommended</button>
+                                </div>
+                                <h3>
+                                    <a href="https://github.com/kennygeraldy/Neverending-Strike" target="_blank" class="h3">Web Based Application Development</a>
+                                </h3>
+                                <p class="blog-text">
+                                    Neverending Strike is a web-based application that allows users to look for info and sell their CSGO skins. This application was created using JS, HTML, and CSS, This was my latest project so far.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-7-13">13 July 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community recommend">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_5.webp" alt="Coordinator of Human Resource Development at Alam Sutera HIMSISFO BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                    <button class="blog-topic text-tiny">Recommended</button>
+                                </div>
+                                <h3>
+                                    <a href="#" class="h3">
+                                        Coordinator of Human Resource Development at Alam Sutera
+                                        HIMSISFO BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to supervise and manage HIMSISFO's Internal, create gathering for HIMSISFO's Internal, and being responsible for building relationships in HIMSISFO.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="02-2022">February 2022</time> - <time month="03-2023">Present</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_6.webp" alt="Freshmen Partner in FYP (First Year Program) Binusian 2025 BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                </div>
+                                <h3>
+                                    <a href="#" class="h3">Freshmen Partner in FYP (First Year Program) Binusian 2025 BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to  help first‑year students to overcome and adapt to the campus environment for 1 year, and responsible to motivate and accompany first‑year students for 1 year.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="10-2021">October 2021</time> - <time month="06-2022">June 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_7.webp" alt="Volunteer Staff of Publication & Documentation in Binus Bekasi Internal Cup (BURNCUP) BINUS University @Bekasi" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                </div>
+                                <h3>
+                                    <a href="#" class="h3">Volunteer Staff of Publication & Documentation in Binus Bekasi Internal Cup (BURNCUP) BINUS University @Bekasi</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to create Instagram Banner & Feeds design.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="10-2021">October 2021</time> - <time month="12-2021">December 2021</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_8.webp" alt="Design, Decoration, and Documentation Division Staff of Welcoming Party 2021 HIMSISFO BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                </div>
+                                <h3>
+                                    <a href="#" class="h3">Design, Decoration, and Documentation Division Staff of Welcoming Party 2021 HIMSISFO BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc and learn attribute is learn Adobe Illustrator to make my design, responsible to create a virtual background design, and create flashback video.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="4-2021">April 2021</time> - <time month="10-2021">October 2021</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_9.JPG" alt="Event Coordinator of LDKCP 2022 HIMSISFO BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                </div>
+                                <h3>
+                                    <a href="#" class="h3">Event Coordinator of LDKCP 2022 HIMSISFO BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to be responsible of creating, managing, and executing event concepts and supervising event division members. 
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="05-2022">May 2022</time> - <time month="07-2022">July 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_10.jpg" alt="Advisory of LDKKA 2023 HIMSISFO BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                </div>
+                                <h3>
+                                    <a href="#" class="h3">Advisory of LDKKA 2023 HIMSISFO BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to supervise and give out final decisions for the event and being an event advisor and bridging between the DPI of the event and the DPI of the association
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="03-2022">March 2022</time> - <time month="02-2023">Present</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_11.jpg" alt="Advisory of GERAK 2022: ON TOP HIMSISFO BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                </div>
+                                <h3>
+                                    <a href="https://student-activity.binus.ac.id/himsisfo/2022/07/gerak-gathering-dan-rapat-kerja-himsisfo/" target="_blank" class="h3">Advisory of GERAK 2022: ON TOP HIMSISFO BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to supervise and give out final decisions for the event and being an event advisor and bridging between the DPI of the event and the DPI of the association
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="03-2022">March 2022</time> - <time month="05-2022">May 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community recommend">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_12.png" alt="Project Manager - Basic Leadership Training : Seek Discomfort HIMSISFO BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                    <button id="recommend" class="blog-topic text-tiny">Recommended</button>
+                                </div>
+                                <h3>
+                                    <a href="https://student-activity.binus.ac.id/himsisfo/2022/01/ldkka-himsisfo-2022-seed/" target="_blank" class="h3">Project Manager - Basic Leadership Training : Seek Discomfort HIMSISFO BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to  Lead the team consisting of 42 people in the Event division, Publication & documentation division, and Equipment division. secondly, managed to create concepts and supervise the event, and lastly, successfully achieved 154 activist candidates (150 candidates were the initial target) 4. Motivate and help team members in need
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="03-2021">March 2021</time> - <time month="01-2022">January 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_13.png" alt="Interviewer of SELCAVIS 2021 HIMSISFO BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                </div>
+                                <h3>
+                                    <a href="https://student-activity.binus.ac.id/himsisfo/2021/10/selcavis-2021-draw-develop-yourself-and-show-who-you-really-are/" target="_blank" class="h3">Interviewer of SELCAVIS 2021 HIMSISFO BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to develop and brainstorm additional questions with my interview partner, interviewing around 30 prospective HIMSISFO activists from all regions according to the chosen division, and discuss and determine the acceptance of activists based on the points that have been assessed.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="09-2021">September 2021</time> - <time month="09-2021">September 2021</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_14.png" alt="Interviewer of SELCAVIS 2022 HIMSISFO BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                </div>
+                                <h3>
+                                    <a href="#"  class="h3">Interviewer of SELCAVIS 2022 HIMSISFO BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to develop and brainstorm additional questions with my interview partner, interviewing around 30 prospective HIMSISFO activists from all regions according to the chosen division, and discuss and determine the acceptance of activists based on the points that have been assessed.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="08-2021">September 2022</time> - <time month="09-2022">September 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card community">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_15.jpg" alt="Freshmen Leader in FYP (First Year Program) Binusian 2025 BINUS University" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Community</button>
+                                </div>
+                                <h3>
+                                    <a href="#"  class="h3">Freshmen Leader in FYP (First Year Program) Binusian 2025 BINUS University</a>
+                                </h3>
+                                <p class="blog-text">
+                                    My jobdesc is to help first‑year students to overcome and adapt to the campus environment in FYP and motivate and accompany first‑year students in the FYP
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time month="08-2021">August 2021</time> - <time month="09-2021">September 2021</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">
+            &copy; Copyright 2022 <a href="#">Kenny's Blog</a>
+        </p>
+    </footer>
+</body>
+</html>

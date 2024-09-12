@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Blog">
+    <meta property="og:title" content="Kenny Geraldy's Blog">
+    <meta property="og:author" content="Kenny Geraldy Chandra">
+    <meta property="og:description" content="Hi My name is Kenny Geraldy Chandra, come and see my adventures.">
+    <meta property="og:img" content="https://drive.google.com/file/d/1dkV1OtfL-a-qibSe2KgZrXg6nCTx33Nv/view?usp=share_link">
+    <title>Kenny Geraldy's Blog</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./assets/images/boy_icon.png" type="image/x-icon">
+
+    <!-- Style  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body class="main-theme">
+    
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="./index.html" class="nav-logo"><h1>Kenny's Blog</h1></a>
+                <button class="btn-nav-mobile">
+                    <ion-icon class="hamburger" name="reorder-three-outline"></ion-icon>
+                </button>
+
+                <div class="flex-wrapper">
+                    <ul class="desktop-nav">
+                        <li><a href="./aboutMe.html" class="nav-link">About Me</a></li>
+                        <li><a onclick="lockContact()" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button class="nav-menu-btn">
+                        <ion-icon class="hamburger" name="reorder-three-outline"></ion-icon>
+                    </button>
+                </div>
+                
+                <div class="mobile-nav">
+                    <button class="nav-close-btn">
+                        <ion-icon class="hamburger" name="reorder-three-outline"></ion-icon>
+                    </button>
+                    <div class="wrapper">
+                        <p class="h3 nav-title">Main Menu</p>
+                        <ul>
+                            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="./aboutMe.html" class="nav-link">About Me</a></li>
+                            <li class="nav-item"><a href="./index.html#contact" class="nav-link">Contact</a></li>
+                        </ul>            
+                    </div>
+                    <div class="wrapper">
+                        <p class="h3 nav-title">Topics</p>
+                        <ul>
+                            <li class="nav-item"><a href="./viewMore.html" class="nav-link">Recommended</a></li>
+                            <li class="nav-item"><a href="./viewMore.html" class="nav-link">Project</a></li>
+                            <li class="nav-item"><a href="./viewMore.html" class="nav-link">Community</a></li>
+                            <li class="nav-item"><a href="https://drive.google.com/file/d/1zyC-293FN05Ru2KabsCz93jjMZVb5v3V/view?usp=share_link" target="_blank" class="nav-link">My CV</a></li>
+                        </ul>         
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Hero -->
+        <div class="hero">
+            <div class="container">
+                <div class="left">
+                    <h1 class="h1">
+                        Hi, I'm <b>Kenny Geraldy Chandra</b>.
+                        <br>Undergraduate Information Systems Student at BINUS University                    
+                    </h1>
+
+                    <p class="h3">
+                        Specialized in Front End Developer
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="./index.html#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="./aboutMe.html" class="btn btn-secondary">About Me</a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="pattern-bg"></div>
+                    <div class="img-box">
+                        <img src="./assets/images/hero.png" alt="Kenny Geraldy" class="hero-img">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="container">
+                <!-- Blog -->
+                <div class="blog" id="blog">
+                    <h2 class="h2">Latest Journey</h2>
+                    <div class="blog-card-group">
+
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_1.webp" alt="The Recyclist" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Project</button>
+                                </div>
+                                <h3>
+                                    <a href="https://drive.google.com/file/d/1yYYGjcpABuiWeT1YSQ825OHV089iSHHn/view?usp=share_link" target="_blank" class="h3">Entrepreneurship Ideation</a>
+                                </h3>
+                                <p class="blog-text">
+                                    Creating Innovative business ideas to solve Indonesia's current crisis. The objective of The Recyclist is objective is to overcome the waste-producing problem in Indonesia.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time datetime="2021-7-5">5 July 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_2.webp" alt="Cooking Papa" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Project</button>
+                                </div>
+                                <h3>
+                                    <a href="#" class="h3">Business Application Development</a>
+                                </h3>
+                                <p class="blog-text">
+                                    Cooking Papa is an application that allows users to purchase beverages and foods from a certain location. This application was created using Java implementation.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-1-20">20 January 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_3.jpg" alt="UML" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Project</button>
+                                </div>
+                                <h3>
+                                    <a href="https://drive.google.com/file/d/19VSlPH4P2YwmuEMvo1mnGmIlCxA7tPcY/view?usp=share_link" target="_blank" class="h3">Advanced Information System Analysis and Design</a>
+                                </h3>
+                                <p class="blog-text">
+                                    Make Unified Modeling Language (UML) diagrams and an Object-Oriented Approach to make a system design. With the purpose of visually representing the system along with its main actors, roles, actions, artifacts or classes, in order to manage information about the system.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-6-19">19 June 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/bbanner_4.webp" alt="Neverending-Strike" width="250" class="blog-banner-img">
+                            </div>
+                            <div class="blog-content-wrapper">
+                                <div class="blog-topic-group">
+                                    <button class="blog-topic text-tiny">Project</button>
+                                    <button class="blog-topic text-tiny">Recommended</button>
+                                </div>
+                                <h3>
+                                    <a href="https://github.com/kennygeraldy/Neverending-Strike" target="_blank" class="h3">Web Based Application Development</a>
+                                </h3>
+                                <p class="blog-text">
+                                    Neverending Strike is a web-based application that allows users to look for info and sell their CSGO skins. This application was created using JS, HTML, and CSS, This was my latest project so far.
+                                </p>
+                                <div class="wrapper-flex">
+                                    <div class="profile-wrapper">
+                                        <img src="./assets/images/author.jpg" alt="Kenny Geraldy" width="50">
+                                    </div>
+                                    <div class="wrapper">
+                                        <a href="#" class="h4">Kenny Geraldy Chandra</a>
+                                        <p class="text-sm">
+                                            <time datetime="2022-7-13">13 July 2022</time>
+                                        </p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button id="load-more" onclick="viewMore()" class="btn load-more">Load More</button>
+                </div>
+                <!-- Side-Panel -->
+                <div class="side">
+                    <div class="topics">
+                        <h2 class="h2">Topics</h2>
+                        <a href="#" class="topic-btn">
+                            <div class="icon-box">
+                                <ion-icon name="thumbs-up-outline"></ion-icon>
+                            </div>
+                            <p>Recommended</p>
+                        </a>
+                        <a onclick="lockContent()" class="topic-btn">
+                            <div class="icon-box">
+                                <ion-icon name="folder-outline"></ion-icon>
+                            </div>
+                            <p>Project</p>
+                        </a>
+                        <a href="#" class="topic-btn">
+                            <div class="icon-box">
+                                <ion-icon name="people-outline"></ion-icon>
+                            </div>
+                            <p>Community</p>
+                        </a>
+                        <a href="#" class="topic-btn">
+                            <div class="icon-box">
+                                <ion-icon name="document-outline"></ion-icon>
+                            </div>
+                            <p>My CV</p>
+                        </a>
+                    </div>
+
+                    <div class="contact" id="contact">
+                        <h2 class="h2">Reach Me</h2>
+                        <div class="wrapper">
+                            <p>Do you want to know more about me? Let's have a conversation.</p>
+                            <ul class="social-link">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/kenny-geraldy-chandra-255aaa202/" target="_blank" class="icon-box linkedin">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/kenny_geraldy/" target="_blank" class="icon-box instagram">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto: kennygeraldy@gmail.com" class="icon-box email">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="copyright">
+            &copy; Copyright 2022 <a href="#">Kenny's Blog</a>
+        </p>
+    </footer>
+
+</body>
+</html>
